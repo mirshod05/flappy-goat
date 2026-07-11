@@ -80,7 +80,7 @@ canvas.addEventListener("click",jump);
 canvas.addEventListener("touchstart", (e) => {
     e.preventDefault();
     jump();
-});
+}, {passive: false});
 
 const obstacles = [];
 const obstacleWidth = 60;
