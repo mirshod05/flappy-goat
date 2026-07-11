@@ -77,7 +77,10 @@ document.addEventListener('keydown', (event) => {
 });
 
 canvas.addEventListener("click",jump);
-canvas.addEventListener("touchstart",jump);
+canvas.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    jump();
+});
 
 const obstacles = [];
 const obstacleWidth = 60;
