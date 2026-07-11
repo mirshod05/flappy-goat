@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+}
+
+#gameCanvas {
+    /*background: #70c5ce; */
+    background-image: url('field.jpg');
+    background-position: center;
+    background-size: contain;
+    border: 2px solid #000;
+}
